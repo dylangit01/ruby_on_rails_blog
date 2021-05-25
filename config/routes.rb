@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :articles         #Note the plural on resources.
+  resources :articles do         #Note the plural on resources.
+    resources :comments
+  end
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
