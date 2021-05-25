@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resource :articles
+  resources :articles
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
